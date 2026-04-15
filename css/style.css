@@ -175,6 +175,42 @@ h1, h2, h3 { line-height: 1.4; color: var(--color-primary-strong); }
   border-top: 1px dashed #e8d9b0;
   font-size: 13.5px; color: var(--color-text-muted);
 }
+.partnership-operation {
+  margin: 28px 0 0; padding: 24px 26px;
+  background: #fff; border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius);
+}
+.partnership-operation h3 {
+  margin: 0 0 12px; font-size: 16px;
+  color: var(--color-primary-strong);
+}
+.partnership-operation p {
+  margin: 0 0 10px; font-size: 14.5px; color: var(--color-text);
+}
+.partnership-operation p:last-child { margin-bottom: 0; }
+
+/* Privacy policy page */
+.policy-h2 {
+  font-size: 17px; margin: 32px 0 12px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--color-border);
+  color: var(--color-primary-strong);
+}
+.policy-list { margin: 0 0 16px; padding-left: 22px; }
+.policy-list li { margin: 4px 0; }
+.policy-meta {
+  margin: 0 0 16px; border-top: 1px solid var(--color-border);
+}
+.policy-meta > div {
+  display: grid; grid-template-columns: 140px 1fr;
+  padding: 12px 4px; border-bottom: 1px solid var(--color-border);
+}
+.policy-meta dt { font-weight: 600; color: var(--color-primary-strong); margin: 0; }
+.policy-meta dd { margin: 0; }
+.policy-date { color: var(--color-text-muted); font-size: 13.5px; margin: 28px 0 20px; }
+@media (max-width: 840px) {
+  .policy-meta > div { grid-template-columns: 1fr; gap: 2px; }
+}
 
 /* Image frame */
 .image-frame {
