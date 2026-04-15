@@ -201,11 +201,18 @@
         会社概要は下記の通りです。最新の事業内容は本ページ「主要サービス」および「提携体制」セクションもあわせてご確認ください。
       </p>
 
-      <figure class="image-frame image-frame-dark">
-        <img src="assets/company-profile.png"
-             alt="株式会社Journeys Partner 会社概要：会社名 株式会社Journeys Partner、代表者 中川幹太、所在地 兵庫県加古郡稲美町和田372-6、設立 2023年11月30日、事業内容を記載"
-             loading="lazy" />
-      </figure>
+      <div class="company-visual">
+        <figure class="company-visual-item">
+          <img src="assets/company-left.png"
+               alt="株式会社JourneysPartner 会社紹介ビジュアル"
+               loading="lazy" />
+        </figure>
+        <figure class="company-visual-item">
+          <img src="assets/company-profile.png"
+               alt="株式会社JourneysPartner 会社概要"
+               loading="lazy" />
+        </figure>
+      </div>
 
       <dl class="company-meta">
         <div><dt>会社名</dt><dd>株式会社JourneysPartner</dd></div>
@@ -228,20 +235,64 @@
       <p class="section-eyebrow">Contact</p>
       <h2 class="section-title">お問い合わせ</h2>
       <p class="section-desc">
-        お問い合わせは、メールまたはお電話にて承ります。
+        下記フォームまたはメール・お電話にて承ります。必須項目をご入力のうえ送信してください。
       </p>
-
-      <figure class="image-frame image-frame-dark">
-        <img src="assets/contact-info.png"
-             alt="連絡先：〒675-1125 兵庫県加古郡稲美町和田372-6、メールアドレス j.p.corp@jpartner-corp.com、電話番号 070-9113-7130"
-             loading="lazy" />
-      </figure>
 
       <ul class="contact-list">
         <li><span class="contact-label">住所</span><span>〒675-1125 兵庫県加古郡稲美町和田372-6</span></li>
         <li><span class="contact-label">メール</span><a href="mailto:j.p.corp@jpartner-corp.com">j.p.corp@jpartner-corp.com</a></li>
         <li><span class="contact-label">電話</span><a href="tel:07091137130">070-9113-7130</a></li>
       </ul>
+
+      <form class="contact-form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="/?contact=success">
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="contact-form-hp" aria-hidden="true">
+          <label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+        </p>
+
+        <div class="form-row">
+          <label for="cf-name">お名前 <span class="req">必須</span></label>
+          <input id="cf-name" name="お名前" type="text" required />
+        </div>
+
+        <div class="form-row">
+          <label for="cf-email">メールアドレス <span class="req">必須</span></label>
+          <input id="cf-email" name="メールアドレス" type="email" required />
+        </div>
+
+        <div class="form-row">
+          <label for="cf-zip">郵便番号 <span class="opt">任意</span></label>
+          <input id="cf-zip" name="郵便番号" type="text" autocomplete="postal-code" />
+        </div>
+
+        <div class="form-row">
+          <label for="cf-addr">住所 <span class="opt">任意</span></label>
+          <input id="cf-addr" name="住所" type="text" autocomplete="street-address" />
+        </div>
+
+        <div class="form-row">
+          <label for="cf-tel">電話番号 <span class="opt">任意</span></label>
+          <input id="cf-tel" name="電話番号" type="tel" autocomplete="tel" />
+        </div>
+
+        <div class="form-row">
+          <label for="cf-msg">お問い合わせ内容 <span class="req">必須</span></label>
+          <textarea id="cf-msg" name="お問い合わせ内容" rows="6" required></textarea>
+        </div>
+
+        <p class="contact-form-note">
+          ご入力いただいた内容は、お問い合わせ対応のためにのみ利用いたします。
+        </p>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">送信する</button>
+        </div>
+      </form>
     </div>
   </section>
 
