@@ -208,6 +208,21 @@ h1, h2, h3 { line-height: 1.4; color: var(--color-primary-strong); }
 .policy-meta dt { font-weight: 600; color: var(--color-primary-strong); margin: 0; }
 .policy-meta dd { margin: 0; }
 .policy-date { color: var(--color-text-muted); font-size: 13.5px; margin: 28px 0 20px; }
+
+/* Thanks page */
+.thanks-box { text-align: center; padding: 24px 0; }
+.thanks-lead {
+  font-size: 17px; color: var(--color-text);
+  margin: 20px 0 12px; line-height: 1.9;
+}
+.thanks-sub { color: var(--color-text-muted); margin: 0 0 32px; }
+.thanks-actions {
+  display: flex; gap: 14px; flex-wrap: wrap; justify-content: center;
+}
+.btn-ghost-dark {
+  border-color: var(--color-primary); color: var(--color-primary);
+}
+.btn-ghost-dark:hover { background: rgba(15,42,71,0.06); text-decoration: none; }
 @media (max-width: 840px) {
   .policy-meta > div { grid-template-columns: 1fr; gap: 2px; }
 }
