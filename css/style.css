@@ -193,6 +193,7 @@ h1, h2, h3 { line-height: 1.4; color: var(--color-primary-strong); }
 
 /* Company visual — plain 2-column images only */
 .section-company { padding: 48px 0; }
+.company-title { text-align: center; margin: 0 0 24px; }
 .company-visual {
   display: grid;
   grid-template-columns: 1fr 1fr;
