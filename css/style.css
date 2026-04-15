@@ -191,26 +191,31 @@ h1, h2, h3 { line-height: 1.4; color: var(--color-primary-strong); }
   border-color: var(--color-frame);
 }
 
-/* Company visual (2-column on desktop) */
+/* Company visual — plain 2-column images only */
+.section-company { padding: 48px 0; }
 .company-visual {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  margin: 0 0 32px;
-  align-items: stretch;
+  gap: 8px;
+  align-items: center;
+  margin: 0;
 }
 .company-visual-item {
   margin: 0;
-  background: #fff;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
-  padding: 16px;
+  padding: 0;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.company-visual-item img { width: 100%; height: auto; max-height: 420px; object-fit: contain; }
+.company-visual-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* Contact form */
 .contact-form {
