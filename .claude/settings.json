@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/ko-ch/hp-project/**)",
+      "Bash(mkdir -p assets css js)",
+      "Bash(cp \"会社概要.png\" assets/company-profile.png)",
+      "Bash(cp \"住所.png\" assets/contact-info.png)"
+    ]
+  }
+}
